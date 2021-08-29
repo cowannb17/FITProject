@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NQR Finances</title>
+    <script src="js/MainPage.js"></script>
+    <style>
+    .header{
+      font-family: Georgia, serif;
+      font-weight:900;
+      color: white;
+      background-color: rgb(84, 74, 226);
+      position: absolute;
+      margin: 30px 20%;
+      padding: 0px 17%;
+      border-radius: 20px;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .information{
+      font-family: Georgia, serif;
+      font-weight: 900;
+      position: absolute;
+      margin: 40px 2%;
+    }
+    .login{
+      font-family: Georgia, serif;
+      font-weight: 900;
+      position: absolute;
+      margin: 10px 75%;
+    }
+    .LoginButton{
+      border: 1px solid #544ae2;
+      border-radius: 5px;
+      padding: 4px;
+      background-color: #544ae2;
+      color: #fff;
+    }
+    .button{
+      border: 1px solid #544ae2;
+      border-radius: 5px;
+      padding: 4px;
+      background-color: #544ae2;
+      color: #fff;
+    }
+    .header-box{
+      border-bottom-style: solid;
+      border-width: 1px;
+      border-bottom-color: darkgray;
+      position: relative;
+      padding: 70px;
+      pointer-events: none;
+    }
+    .Website{
+      font-family: Georgia, serif;
+      font-weight:900;
+      font-size: 300%;
+      position: absolute;
+      background-color: rgb(84, 74, 226);
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="information">
+      <table>
+        <tr>
+          <td><input type="button" id="About" class="button" value="About Us"></td>
+          <td><a href="https://fitwebapp.azurewebsites.net/"><img src="resources/logo.png" alt="NQR Logo"></a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="header">
+      <h1>NQR Finances</h1>
+    </div>
+    <div class="header-box"></div>
+    <br>
+    <div class="Website">
+      <table width="1500px">
+        <tr>
+          <td>My Feed</td>
+          <td>Courses</td>
+        </tr>
+        <tr>
+          <td><br></td>
+        </tr>
+        <tr>
+          <td><br></td>
+        </tr>
+        <tr>
+          <td><br></td>
+        </tr>
+        <tr>
+          <td>Notifications</td>
+          <td>My Profile</td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      document.querySelector("#About").onclick = about;
+
+      function about() {
+        document.location.href = "/About.html";
+      }
+    </script>
+  </body>
+</html>
